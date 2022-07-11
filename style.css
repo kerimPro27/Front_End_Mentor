@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Manrope;
+    background-color:hsl(218, 23%, 16%);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.card-container{
+    width:500px;
+    background-color:hsl(217, 19%, 24%);
+    border-radius: 12px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding:2rem;
+}
+.card-header{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    margin-bottom: 16px;
+}
+.card-title{
+    color:hsl(150, 100%, 66%);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: x-small;
+}
+.Advice-counter{
+    color:hsl(150, 100%, 66%);
+    font-size: x-small;
+}
+.card-body{
+    text-align: center;
+    margin-bottom:2rem;
+    color:lightgray;
+    line-height: 1.7;
+    font-size: larger;
+}
+.card-footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.pattern-divider-container{
+    margin-bottom: 2rem;
+}
+.icon-dice-container{
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    padding: 1rem;
+    display:flex;
+    position:absolute;
+    top:110%;
+    cursor:pointer;
+    transform:scale(0.98)
+}
+.icon-dice-container:hover{
+    box-shadow: 1px 1px 14px hsl(150, 100%, 66%) ;
+    transition: 0.3s ease;
+}
+/*small screen*/
+@media (max-width:375px){
+    .card-container{
+        width:80%;
+    }
+    .pattern-divider-container {
+        display:flex;
+        justify-content: center;
+    }
+    .pattern-divider-container img{
+        width:100%;
+    }
+}
